@@ -22,7 +22,8 @@ class HttpManager: NSObject {
     }
     
     func getChannelList(success:@escaping (_ successd:Array<ChannelListModel>)->(),fail:(_ failed:Error)->()){
-        Alamofire.request("https://app.ngbbs.cn/mag/livevideo/v1/Video/smallVideoList?ids=&p=4&step=20", parameters: ["":""], headers: ["Authorization":"APPCODE 4c0aa04ae3a74d57996a169ae94c78e6"]).responseJSON { (response) in
+
+        Alamofire.request("https://app.ngbbs.cn/mag/info/v1/channel/channelConfigById?channel_id=1").responseJSON { (response) in
             
             
             let dataArr: Array<ChannelListModel>

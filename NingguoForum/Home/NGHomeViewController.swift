@@ -9,12 +9,12 @@
 import UIKit
 
 class NGHomeViewController: UIViewController {
-
+    var scrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "首页"
         self.view.backgroundColor = UIColor(hexString: "#999999");
-        
+        configUI()
         
         HttpManager.sharedInstance.getChannelList(success: { (success) in
             
@@ -24,5 +24,30 @@ class NGHomeViewController: UIViewController {
 
     }
 
+    func configUI() {
+        scrollView = UIScrollView()
+        scrollView.delegate = self
+        scrollView.frame = CGRect.init(x: 0, y: 64+40, width: KSCREEN_WIDTH, height: KSCREEN_HEIGHT-64-49-40)
+        self.view.addSubview(scrollView)
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.bounces = false
+        scrollView.isPagingEnabled = true
+        let homeVC = NGHomeTableViewController()
+        homeVC.view.frame = scrollView.bounds
+        scrollView.addSubview(homeVC.view)
+        
+        let dynamicvc = NGDynamicTableViewController()
+        dynamicvc.view.frame = CGRect.init(x: scrollView.frameW, y: 0, width: scrollView.frameW, height: scrollView.frameH)
+        scrollView.addSubview(dynamicvc.view)
+        scrollView.contentSize = CGSize.init(width: scrollView.frameW*2, height: scrollView.frameH)
+
+    }
 }
 
+extension NGHomeViewController: UIScrollViewDelegate {
+     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("\(scrollView.contentOffset.x)")
+    }
+}
