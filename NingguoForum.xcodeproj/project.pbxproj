@@ -10,9 +10,17 @@
 		4C32716EF8B0ECDA5A899A2A /* Pods_NingguoForum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB4C77EF4D292F7C4AED998 /* Pods_NingguoForum.framework */; };
 		AE78A4CC255CE48100C1EF03 /* NGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78A4CB255CE48100C1EF03 /* NGTabBarController.swift */; };
 		AE78A4CE255CE51400C1EF03 /* NGbbsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78A4CD255CE51400C1EF03 /* NGbbsViewController.swift */; };
+		AE78A4D6255D0AF600C1EF03 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78A4D0255D0AF600C1EF03 /* DateUtil.swift */; };
+		AE78A4D7255D0AF600C1EF03 /* HeadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78A4D1255D0AF600C1EF03 /* HeadFile.swift */; };
+		AE78A4D8255D0AF600C1EF03 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78A4D2255D0AF600C1EF03 /* UIView+.swift */; };
+		AE78A4D9255D0AF600C1EF03 /* ObjectMapperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78A4D3255D0AF600C1EF03 /* ObjectMapperClass.swift */; };
+		AE78A4DA255D0AF600C1EF03 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78A4D4255D0AF600C1EF03 /* SwiftNotice.swift */; };
+		AE78A4DB255D0AF600C1EF03 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78A4D5255D0AF600C1EF03 /* UIColor+.swift */; };
+		AE78A4DD255D0C1300C1EF03 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78A4DC255D0C1300C1EF03 /* HttpManager.swift */; };
+		AE78A4DF255D0C3800C1EF03 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78A4DE255D0C3800C1EF03 /* InfoModel.swift */; };
 		AECA17F5255CD51100DDD29E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA17F4255CD51100DDD29E /* AppDelegate.swift */; };
 		AECA17F7255CD51100DDD29E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA17F6255CD51100DDD29E /* SceneDelegate.swift */; };
-		AECA17F9255CD51100DDD29E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA17F8255CD51100DDD29E /* ViewController.swift */; };
+		AECA17F9255CD51100DDD29E /* NGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA17F8255CD51100DDD29E /* NGHomeViewController.swift */; };
 		AECA17FC255CD51100DDD29E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA17FA255CD51100DDD29E /* Main.storyboard */; };
 		AECA17FE255CD51400DDD29E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECA17FD255CD51400DDD29E /* Assets.xcassets */; };
 		AECA1801255CD51400DDD29E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA17FF255CD51400DDD29E /* LaunchScreen.storyboard */; };
@@ -23,10 +31,18 @@
 		ABEA9B53477E08FC319C50A6 /* Pods-NingguoForum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NingguoForum.release.xcconfig"; path = "Target Support Files/Pods-NingguoForum/Pods-NingguoForum.release.xcconfig"; sourceTree = "<group>"; };
 		AE78A4CB255CE48100C1EF03 /* NGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGTabBarController.swift; sourceTree = "<group>"; };
 		AE78A4CD255CE51400C1EF03 /* NGbbsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGbbsViewController.swift; sourceTree = "<group>"; };
+		AE78A4D0255D0AF600C1EF03 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		AE78A4D1255D0AF600C1EF03 /* HeadFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadFile.swift; sourceTree = "<group>"; };
+		AE78A4D2255D0AF600C1EF03 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		AE78A4D3255D0AF600C1EF03 /* ObjectMapperClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectMapperClass.swift; sourceTree = "<group>"; };
+		AE78A4D4255D0AF600C1EF03 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
+		AE78A4D5255D0AF600C1EF03 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		AE78A4DC255D0C1300C1EF03 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		AE78A4DE255D0C3800C1EF03 /* InfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
 		AECA17F1255CD51100DDD29E /* 宁国论坛.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "宁国论坛.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECA17F4255CD51100DDD29E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AECA17F6255CD51100DDD29E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AECA17F8255CD51100DDD29E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AECA17F8255CD51100DDD29E /* NGHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGHomeViewController.swift; sourceTree = "<group>"; };
 		AECA17FB255CD51100DDD29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AECA17FD255CD51400DDD29E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AECA1800255CD51400DDD29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +79,35 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AE78A4CF255D0AF600C1EF03 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AE78A4D0255D0AF600C1EF03 /* DateUtil.swift */,
+				AE78A4D1255D0AF600C1EF03 /* HeadFile.swift */,
+				AE78A4D2255D0AF600C1EF03 /* UIView+.swift */,
+				AE78A4D3255D0AF600C1EF03 /* ObjectMapperClass.swift */,
+				AE78A4D4255D0AF600C1EF03 /* SwiftNotice.swift */,
+				AE78A4D5255D0AF600C1EF03 /* UIColor+.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AE78A4E0255D155B00C1EF03 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AECA17F8255CD51100DDD29E /* NGHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AE78A4E1255D156800C1EF03 /* BBS */ = {
+			isa = PBXGroup;
+			children = (
+				AE78A4CD255CE51400C1EF03 /* NGbbsViewController.swift */,
+			);
+			path = BBS;
+			sourceTree = "<group>";
+		};
 		AECA17E8255CD51000DDD29E = {
 			isa = PBXGroup;
 			children = (
@@ -84,11 +129,14 @@
 		AECA17F3255CD51100DDD29E /* NingguoForum */ = {
 			isa = PBXGroup;
 			children = (
+				AE78A4E0255D155B00C1EF03 /* Home */,
+				AE78A4E1255D156800C1EF03 /* BBS */,
+				AE78A4CF255D0AF600C1EF03 /* Utils */,
 				AECA17F4255CD51100DDD29E /* AppDelegate.swift */,
 				AECA17F6255CD51100DDD29E /* SceneDelegate.swift */,
 				AE78A4CB255CE48100C1EF03 /* NGTabBarController.swift */,
-				AECA17F8255CD51100DDD29E /* ViewController.swift */,
-				AE78A4CD255CE51400C1EF03 /* NGbbsViewController.swift */,
+				AE78A4DC255D0C1300C1EF03 /* HttpManager.swift */,
+				AE78A4DE255D0C3800C1EF03 /* InfoModel.swift */,
 				AECA17FA255CD51100DDD29E /* Main.storyboard */,
 				AECA17FD255CD51400DDD29E /* Assets.xcassets */,
 				AECA17FF255CD51400DDD29E /* LaunchScreen.storyboard */,
@@ -213,9 +261,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE78A4CC255CE48100C1EF03 /* NGTabBarController.swift in Sources */,
-				AECA17F9255CD51100DDD29E /* ViewController.swift in Sources */,
+				AECA17F9255CD51100DDD29E /* NGHomeViewController.swift in Sources */,
 				AE78A4CE255CE51400C1EF03 /* NGbbsViewController.swift in Sources */,
+				AE78A4DF255D0C3800C1EF03 /* InfoModel.swift in Sources */,
+				AE78A4DD255D0C1300C1EF03 /* HttpManager.swift in Sources */,
+				AE78A4DA255D0AF600C1EF03 /* SwiftNotice.swift in Sources */,
+				AE78A4DB255D0AF600C1EF03 /* UIColor+.swift in Sources */,
+				AE78A4D9255D0AF600C1EF03 /* ObjectMapperClass.swift in Sources */,
+				AE78A4D6255D0AF600C1EF03 /* DateUtil.swift in Sources */,
+				AE78A4D8255D0AF600C1EF03 /* UIView+.swift in Sources */,
 				AECA17F5255CD51100DDD29E /* AppDelegate.swift in Sources */,
+				AE78A4D7255D0AF600C1EF03 /* HeadFile.swift in Sources */,
 				AECA17F7255CD51100DDD29E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

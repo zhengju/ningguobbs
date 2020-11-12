@@ -12,7 +12,7 @@ class NGTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let v1 = ViewController()
+        let v1 = NGHomeViewController()
         let nav1 = UINavigationController(rootViewController: v1)
         let v2 = NGbbsViewController()
         let nav2 = UINavigationController(rootViewController: v2)
