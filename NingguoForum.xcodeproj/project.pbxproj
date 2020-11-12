@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C32716EF8B0ECDA5A899A2A /* Pods_NingguoForum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB4C77EF4D292F7C4AED998 /* Pods_NingguoForum.framework */; };
+		AE78A4CC255CE48100C1EF03 /* NGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78A4CB255CE48100C1EF03 /* NGTabBarController.swift */; };
+		AE78A4CE255CE51400C1EF03 /* NGbbsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78A4CD255CE51400C1EF03 /* NGbbsViewController.swift */; };
 		AECA17F5255CD51100DDD29E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA17F4255CD51100DDD29E /* AppDelegate.swift */; };
 		AECA17F7255CD51100DDD29E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA17F6255CD51100DDD29E /* SceneDelegate.swift */; };
 		AECA17F9255CD51100DDD29E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA17F8255CD51100DDD29E /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		015C07AF87F4BA18CD215B9E /* Pods-NingguoForum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NingguoForum.debug.xcconfig"; path = "Target Support Files/Pods-NingguoForum/Pods-NingguoForum.debug.xcconfig"; sourceTree = "<group>"; };
 		ABEA9B53477E08FC319C50A6 /* Pods-NingguoForum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NingguoForum.release.xcconfig"; path = "Target Support Files/Pods-NingguoForum/Pods-NingguoForum.release.xcconfig"; sourceTree = "<group>"; };
+		AE78A4CB255CE48100C1EF03 /* NGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGTabBarController.swift; sourceTree = "<group>"; };
+		AE78A4CD255CE51400C1EF03 /* NGbbsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGbbsViewController.swift; sourceTree = "<group>"; };
 		AECA17F1255CD51100DDD29E /* 宁国论坛.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "宁国论坛.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECA17F4255CD51100DDD29E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AECA17F6255CD51100DDD29E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +86,9 @@
 			children = (
 				AECA17F4255CD51100DDD29E /* AppDelegate.swift */,
 				AECA17F6255CD51100DDD29E /* SceneDelegate.swift */,
+				AE78A4CB255CE48100C1EF03 /* NGTabBarController.swift */,
 				AECA17F8255CD51100DDD29E /* ViewController.swift */,
+				AE78A4CD255CE51400C1EF03 /* NGbbsViewController.swift */,
 				AECA17FA255CD51100DDD29E /* Main.storyboard */,
 				AECA17FD255CD51400DDD29E /* Assets.xcassets */,
 				AECA17FF255CD51400DDD29E /* LaunchScreen.storyboard */,
@@ -206,7 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE78A4CC255CE48100C1EF03 /* NGTabBarController.swift in Sources */,
 				AECA17F9255CD51100DDD29E /* ViewController.swift in Sources */,
+				AE78A4CE255CE51400C1EF03 /* NGbbsViewController.swift in Sources */,
 				AECA17F5255CD51100DDD29E /* AppDelegate.swift in Sources */,
 				AECA17F7255CD51100DDD29E /* SceneDelegate.swift in Sources */,
 			);

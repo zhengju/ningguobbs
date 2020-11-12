@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NGbbsViewController.swift
 //  NingguoForum
 //
 //  Created by zhengsw on 2020/11/12.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NGbbsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "首页"
-        self.view.backgroundColor = UIColor.red;
+        self.title = "逛论坛"
+        self.view.backgroundColor = UIColor.white
+        
     }
-
 }
-
