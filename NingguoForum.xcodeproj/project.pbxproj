@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C32716EF8B0ECDA5A899A2A /* Pods_NingguoForum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB4C77EF4D292F7C4AED998 /* Pods_NingguoForum.framework */; };
+		AECA17F5255CD51100DDD29E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA17F4255CD51100DDD29E /* AppDelegate.swift */; };
+		AECA17F7255CD51100DDD29E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA17F6255CD51100DDD29E /* SceneDelegate.swift */; };
+		AECA17F9255CD51100DDD29E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA17F8255CD51100DDD29E /* ViewController.swift */; };
+		AECA17FC255CD51100DDD29E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA17FA255CD51100DDD29E /* Main.storyboard */; };
+		AECA17FE255CD51400DDD29E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECA17FD255CD51400DDD29E /* Assets.xcassets */; };
+		AECA1801255CD51400DDD29E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECA17FF255CD51400DDD29E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		015C07AF87F4BA18CD215B9E /* Pods-NingguoForum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NingguoForum.debug.xcconfig"; path = "Target Support Files/Pods-NingguoForum/Pods-NingguoForum.debug.xcconfig"; sourceTree = "<group>"; };
+		ABEA9B53477E08FC319C50A6 /* Pods-NingguoForum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NingguoForum.release.xcconfig"; path = "Target Support Files/Pods-NingguoForum/Pods-NingguoForum.release.xcconfig"; sourceTree = "<group>"; };
+		AECA17F1255CD51100DDD29E /* 宁国论坛.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "宁国论坛.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECA17F4255CD51100DDD29E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AECA17F6255CD51100DDD29E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AECA17F8255CD51100DDD29E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AECA17FB255CD51100DDD29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AECA17FD255CD51400DDD29E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AECA1800255CD51400DDD29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AECA1802255CD51400DDD29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB4C77EF4D292F7C4AED998 /* Pods_NingguoForum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NingguoForum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AECA17EE255CD51100DDD29E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C32716EF8B0ECDA5A899A2A /* Pods_NingguoForum.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0175B81285C443A2D0DB3B76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBB4C77EF4D292F7C4AED998 /* Pods_NingguoForum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0EFAE45BBEDBBECB5136F0C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				015C07AF87F4BA18CD215B9E /* Pods-NingguoForum.debug.xcconfig */,
+				ABEA9B53477E08FC319C50A6 /* Pods-NingguoForum.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AECA17E8255CD51000DDD29E = {
+			isa = PBXGroup;
+			children = (
+				AECA17F3255CD51100DDD29E /* NingguoForum */,
+				AECA17F2255CD51100DDD29E /* Products */,
+				0EFAE45BBEDBBECB5136F0C2 /* Pods */,
+				0175B81285C443A2D0DB3B76 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AECA17F2255CD51100DDD29E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AECA17F1255CD51100DDD29E /* 宁国论坛.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AECA17F3255CD51100DDD29E /* NingguoForum */ = {
+			isa = PBXGroup;
+			children = (
+				AECA17F4255CD51100DDD29E /* AppDelegate.swift */,
+				AECA17F6255CD51100DDD29E /* SceneDelegate.swift */,
+				AECA17F8255CD51100DDD29E /* ViewController.swift */,
+				AECA17FA255CD51100DDD29E /* Main.storyboard */,
+				AECA17FD255CD51400DDD29E /* Assets.xcassets */,
+				AECA17FF255CD51400DDD29E /* LaunchScreen.storyboard */,
+				AECA1802255CD51400DDD29E /* Info.plist */,
+			);
+			path = NingguoForum;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AECA17F0255CD51100DDD29E /* NingguoForum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECA1805255CD51400DDD29E /* Build configuration list for PBXNativeTarget "NingguoForum" */;
+			buildPhases = (
+				4F3117F769D491329CC3809C /* [CP] Check Pods Manifest.lock */,
+				AECA17ED255CD51100DDD29E /* Sources */,
+				AECA17EE255CD51100DDD29E /* Frameworks */,
+				AECA17EF255CD51100DDD29E /* Resources */,
+				061337459C81FBDE9C489EC7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NingguoForum;
+			productName = NingguoForum;
+			productReference = AECA17F1255CD51100DDD29E /* 宁国论坛.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AECA17E9255CD51000DDD29E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = zhengsw;
+				TargetAttributes = {
+					AECA17F0255CD51100DDD29E = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = AECA17EC255CD51000DDD29E /* Build configuration list for PBXProject "NingguoForum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AECA17E8255CD51000DDD29E;
+			productRefGroup = AECA17F2255CD51100DDD29E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AECA17F0255CD51100DDD29E /* NingguoForum */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AECA17EF255CD51100DDD29E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECA1801255CD51400DDD29E /* LaunchScreen.storyboard in Resources */,
+				AECA17FE255CD51400DDD29E /* Assets.xcassets in Resources */,
+				AECA17FC255CD51100DDD29E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		061337459C81FBDE9C489EC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NingguoForum/Pods-NingguoForum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NingguoForum/Pods-NingguoForum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NingguoForum/Pods-NingguoForum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F3117F769D491329CC3809C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NingguoForum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AECA17ED255CD51100DDD29E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECA17F9255CD51100DDD29E /* ViewController.swift in Sources */,
+				AECA17F5255CD51100DDD29E /* AppDelegate.swift in Sources */,
+				AECA17F7255CD51100DDD29E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AECA17FA255CD51100DDD29E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECA17FB255CD51100DDD29E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AECA17FF255CD51400DDD29E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECA1800255CD51400DDD29E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AECA1803255CD51400DDD29E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AECA1804255CD51400DDD29E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AECA1806255CD51400DDD29E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015C07AF87F4BA18CD215B9E /* Pods-NingguoForum.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NingguoForum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zsw.NingguoForum;
+				PRODUCT_NAME = "宁国论坛";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AECA1807255CD51400DDD29E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABEA9B53477E08FC319C50A6 /* Pods-NingguoForum.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NingguoForum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zsw.NingguoForum;
+				PRODUCT_NAME = "宁国论坛";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AECA17EC255CD51000DDD29E /* Build configuration list for PBXProject "NingguoForum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECA1803255CD51400DDD29E /* Debug */,
+				AECA1804255CD51400DDD29E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECA1805255CD51400DDD29E /* Build configuration list for PBXNativeTarget "NingguoForum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECA1806255CD51400DDD29E /* Debug */,
+				AECA1807255CD51400DDD29E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AECA17E9255CD51000DDD29E /* Project object */;
+}

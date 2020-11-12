@@ -1,0 +1,6 @@
+framework module Pods_NingguoForum {
+  umbrella header "Pods-NingguoForum-umbrella.h"
+
+  export *
+  module * { export * }
+}
