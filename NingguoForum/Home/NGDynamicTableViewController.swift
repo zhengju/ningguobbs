@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NGDynamicTableViewController: UITableViewController {
+class NGDynamicTableView: UIView {
 
     override func viewDidLoad() {
         super.viewDidLoad()

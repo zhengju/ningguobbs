@@ -10,20 +10,28 @@ import UIKit
 
 class NGHomeViewController: UIViewController {
     var scrollView: UIScrollView!
+    var homeTableView: NGHomeTableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "首页"
         self.view.backgroundColor = UIColor(hexString: "#999999");
         configUI()
-        
-        HttpManager.sharedInstance.getChannelList(success: { (success) in
-            
+
+        HttpManager.sharedInstance.getIconNavigation(success: { (successd:Icon_navigation) in
+
+
+            let model = successd.items[0]
+
+            print(model.pic)
+
+            self.homeTableView.setDatas(dataSource: successd)
+
         }) { (fail) in
-            
+
         }
 
     }
-
+    
     func configUI() {
         scrollView = UIScrollView()
         scrollView.delegate = self
@@ -33,15 +41,14 @@ class NGHomeViewController: UIViewController {
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.bounces = false
         scrollView.isPagingEnabled = true
-        let homeVC = NGHomeTableViewController()
-        homeVC.view.frame = scrollView.bounds
-        scrollView.addSubview(homeVC.view)
         
-        let dynamicvc = NGDynamicTableViewController()
-        dynamicvc.view.frame = CGRect.init(x: scrollView.frameW, y: 0, width: scrollView.frameW, height: scrollView.frameH)
-        scrollView.addSubview(dynamicvc.view)
+        let homeTableView = NGHomeTableView(frame: scrollView.bounds)
+        scrollView.addSubview(homeTableView)
+        
+        let dynamicTableView = NGDynamicTableView(frame: CGRect(x: scrollView.frameW, y: 0, width: scrollView.frameW, height: scrollView.frameH))
+        scrollView.addSubview(dynamicTableView)
         scrollView.contentSize = CGSize.init(width: scrollView.frameW*2, height: scrollView.frameH)
-
+        
     }
 }
 

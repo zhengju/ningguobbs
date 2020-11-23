@@ -21,29 +21,28 @@ class HttpManager: NSObject {
         return Static.instance
     }
     
-    func getChannelList(success:@escaping (_ successd:Array<ChannelListModel>)->(),fail:(_ failed:Error)->()){
+    func getIconNavigation(success:@escaping (_ successd:Icon_navigation)->(),fail:(_ failed:Error)->()){
 
         Alamofire.request("https://app.ngbbs.cn/mag/info/v1/channel/channelConfigById?channel_id=1").responseJSON { (response) in
-            
-            
-            let dataArr: Array<ChannelListModel>
-            
+
             if response.result.isSuccess {
                 if response.result.value != nil{
                     
                     switch response.result{
                     case.success(let json):
 
-                        print(JSON.init(arrayLiteral: json))
+//                        print(JSON.init(arrayLiteral: json))
                         
                         
                         let dict = json as! Dictionary<String,AnyObject>
                         
-//                        let result = dict["showapi_res_body"]!["channelList"]
-//
-//                        dataArr = Mapper<ChannelListModel>().mapArray(JSONArray: result as! [[String : Any]])
-//
-//                        success(dataArr)
+                        let result = dict["data"]!["operative_config"] as! Array<Any>
+
+                        let iconNavigation = result[2] ?? Array<Any>()
+
+                        let icons = Mapper<Icon_navigation>().map(JSONObject: iconNavigation)!
+
+                        success(icons)
 
                         break
                     case .failure(let error):

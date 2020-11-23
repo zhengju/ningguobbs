@@ -9,6 +9,38 @@
 import UIKit
 import ObjectMapper
 
+class Icon_navigation: Mappable {
+    
+    var items: Array<IconNavigationModel>
+    
+    required init?(map: Map) {
+        items = []
+    }
+    
+    func mapping(map: Map) {
+        items <- map["items"]
+    }
+    
+}
+
+class IconNavigationModel: Mappable {
+    var link: String
+    var title: String
+    var pic :String
+    required init?(map: Map) {
+        link = ""
+        title = ""
+        pic = ""
+    }
+    func mapping(map: Map) {
+        link <- map["link"]
+        title <- map["title"]
+        pic <- map["pic"]
+    }
+    
+}
+
+
 class ChannelListModel: Mappable {
     
     var name: String!

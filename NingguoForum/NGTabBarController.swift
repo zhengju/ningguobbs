@@ -16,6 +16,7 @@ class NGTabBarController: UITabBarController {
         let nav1 = UINavigationController(rootViewController: v1)
         let v2 = NGbbsViewController()
         let nav2 = UINavigationController(rootViewController: v2)
+        
         nav1.tabBarItem = UITabBarItem.init(title: "首页", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
         nav2.tabBarItem = UITabBarItem.init(title: "逛论坛", image: UIImage(named: "message"), selectedImage: UIImage(named: "message_1"))
         self.tabBar.shadowImage = nil
