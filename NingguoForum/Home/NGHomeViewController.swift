@@ -43,6 +43,7 @@ class NGHomeViewController: UIViewController {
         scrollView.isPagingEnabled = true
         
         let homeTableView = NGHomeTableView(frame: scrollView.bounds)
+        self.homeTableView = homeTableView
         scrollView.addSubview(homeTableView)
         
         let dynamicTableView = NGDynamicTableView(frame: CGRect(x: scrollView.frameW, y: 0, width: scrollView.frameW, height: scrollView.frameH))

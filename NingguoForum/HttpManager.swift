@@ -38,7 +38,7 @@ class HttpManager: NSObject {
                         
                         let result = dict["data"]!["operative_config"] as! Array<Any>
 
-                        let iconNavigation = result[2] ?? Array<Any>()
+                        let iconNavigation = result[2]
 
                         let icons = Mapper<Icon_navigation>().map(JSONObject: iconNavigation)!
 
