@@ -40,6 +40,30 @@ class IconNavigationModel: Mappable {
     
 }
 
+class HomeListModel: Mappable {
+    var link: String
+    var title: String
+    var pics_arr :Array<Any>
+    var from :String
+    required init?(map: Map) {
+        link = ""
+        title = ""
+        pics_arr = Array()
+        from = ""
+    }
+    func mapping(map: Map) {
+        link <- map["link"]
+        title <- map["title"]
+        pics_arr <- map["pics_arr"]
+        
+        if pics_arr.count == 0 {
+            pics_arr <- map["pic_arr"]
+        }
+        
+        from <- map["from"]
+    }
+    
+}
 
 class ChannelListModel: Mappable {
     

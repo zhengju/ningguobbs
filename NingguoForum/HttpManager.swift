@@ -58,6 +58,45 @@ class HttpManager: NSObject {
         }
     }
     
+        func getHomeList(success:@escaping (_ successd:Array<HomeListModel>)->(),fail:(_ failed:Error)->()){
+
+            Alamofire.request("https://app.ngbbs.cn/mag/info/v3/info/infoListByCatId?cat_id=78&channel_id=1&is_app_first=1&p=1&step=20&tab=0&uniqid=5af95dca461d2").responseJSON { (response) in
+
+                if response.result.isSuccess {
+                    if response.result.value != nil{
+                        
+                        switch response.result{
+                        case.success(let json):
+
+                            print(JSON.init(arrayLiteral: json))
+                            
+                            
+                            let dict = json as! Dictionary<String,AnyObject>
+//                            
+                            let result = dict["list"] as! Array<Any>
+//
+//                            let iconNavigation = result[2]
+//
+                            let lists = Mapper<HomeListModel>().mapArray(JSONArray: result as! [[String : Any]])
+//
+                            success(lists)
+
+                            break
+                        case .failure(let error):
+                            print("\(error)")
+                            break
+                            
+                        }
+                        
+                    }
+                    
+                }
+                
+            }
+        }
+    
+    
+    
     func getChannelDetail(patameter:Parameters, success:@escaping (_ successd:Array<ContentlistModel>)->(),fail:(_ failed:Error)->()) {
         Alamofire.request("http://ali-news.showapi.com/newsList", parameters: patameter, headers: ["Authorization":"APPCODE 4c0aa04ae3a74d57996a169ae94c78e6"]).responseJSON { (response) in
             

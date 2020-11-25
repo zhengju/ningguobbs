@@ -11,7 +11,7 @@ import UIKit
 class NGHomeTableView: UIView, UITableViewDelegate, UITableViewDataSource {
 
     var tableView: UITableView!
-    var datas: Array<IconNavigationModel>!
+    var datas: Array<HomeListModel>!
     
     override init(frame: CGRect) {
         
@@ -30,8 +30,8 @@ class NGHomeTableView: UIView, UITableViewDelegate, UITableViewDataSource {
         tableView.reloadData()
     }
     
-    func setDatas(dataSource: Icon_navigation) {
-        datas = dataSource.items
+    func setDatas(dataSource: Array<HomeListModel>) {
+        datas = dataSource
         tableView.reloadData()
     }
     

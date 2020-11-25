@@ -19,17 +19,22 @@ class NGHomeViewController: UIViewController {
 
         HttpManager.sharedInstance.getIconNavigation(success: { (successd:Icon_navigation) in
 
-
-            let model = successd.items[0]
-
-            print(model.pic)
-
-            self.homeTableView.setDatas(dataSource: successd)
+//            self.homeTableView.setDatas(dataSource: successd)
 
         }) { (fail) in
 
         }
 
+        
+        HttpManager.sharedInstance.getHomeList(success: { (successd:Array<HomeListModel>) in
+            print(successd)
+            
+            self.homeTableView.setDatas(dataSource: successd)
+            
+        }) { (fail) in
+            
+        }
+        
     }
     
     func configUI() {
