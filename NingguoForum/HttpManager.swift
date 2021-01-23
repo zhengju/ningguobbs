@@ -20,6 +20,39 @@ class HttpManager: NSObject {
 
         return Static.instance
     }
+    //顶部轮播图
+    func getHomeCircle(success:@escaping (_ successd:Array<HomeCircle>)->(),fail:(_ failed:Error)->()){
+
+        Alamofire.request("https://app.ngbbs.cn/mag/operative/v1/ad/listNotEndByPlace?place=pic_slide_1486618172").responseJSON { (response) in
+
+            if response.result.isSuccess {
+                if response.result.value != nil{
+                    
+                    switch response.result{
+                    
+                    case.success(let json):
+
+                        let dict = json as! Dictionary<String,AnyObject>
+                        
+                        let list = dict["list"] as! Array<Any>
+
+                        let lists = Mapper<HomeCircle>().mapArray(JSONArray: list as! [[String : Any]])
+                        
+                        success(lists)
+
+                        break
+                    case .failure(let error):
+                        print("\(error)")
+                        break
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
+    }
     
     func getIconNavigation(success:@escaping (_ successd:Icon_navigation)->(),fail:(_ failed:Error)->()){
 

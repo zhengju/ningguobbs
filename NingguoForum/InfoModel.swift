@@ -9,6 +9,25 @@
 import UIKit
 import ObjectMapper
 
+class HomeCircle: Mappable {
+    
+    var title: String
+    var link: String
+    var pic_arr: Array<Any>
+    required init?(map: Map) {
+        title = ""
+        link = ""
+        pic_arr = []
+    }
+    
+    func mapping(map: Map) {
+        title <- map["title"]
+        link <- map["link"]
+        pic_arr <- map["pic_arr"]
+    }
+    
+}
+
 class Icon_navigation: Mappable {
     
     var items: Array<IconNavigationModel>

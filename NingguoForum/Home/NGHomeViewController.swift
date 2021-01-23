@@ -9,14 +9,33 @@
 import UIKit
 
 class NGHomeViewController: UIViewController {
-    var scrollView: UIScrollView!
+    var scrollView: NGHomeScrollView!
     var homeTableView: NGHomeTableView!
+    var datas:NSMutableArray!
+    var dragCriticalY: CGFloat!
+    lazy var gropQueue:DispatchGroup = {
+        let grop:DispatchGroup = DispatchGroup.init()
+        return grop
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "首页"
         self.view.backgroundColor = UIColor(hexString: "#999999");
+        datas = NSMutableArray()
         configUI()
 
+        gropQueue.enter()
+        //获取轮播图
+        HttpManager.sharedInstance.getHomeCircle { [self] (successd:Array<HomeCircle>) in
+            print(successd)
+            datas.add(successd)
+            self.gropQueue.leave()
+        } fail: { (fail) in
+            
+        }
+
+        
         HttpManager.sharedInstance.getIconNavigation(success: { (successd:Icon_navigation) in
 
 //            self.homeTableView.setDatas(dataSource: successd)
@@ -25,22 +44,25 @@ class NGHomeViewController: UIViewController {
 
         }
 
-        
-        HttpManager.sharedInstance.getHomeList(success: { (successd:Array<HomeListModel>) in
+        gropQueue.enter()
+        HttpManager.sharedInstance.getHomeList( success: { (successd:Array<HomeListModel>) in
             print(successd)
-            
-            self.homeTableView.setDatas(dataSource: successd)
-            
+            self.datas.add(successd)
+            self.gropQueue.leave()
         }) { (fail) in
             
+        }
+        
+        gropQueue.notify(queue: DispatchQueue.main){ [self] in
+            self.homeTableView.setDatas(dataSource: datas)
         }
         
     }
     
     func configUI() {
-        scrollView = UIScrollView()
+        scrollView = NGHomeScrollView()
         scrollView.delegate = self
-        scrollView.frame = CGRect.init(x: 0, y: 64+40, width: KSCREEN_WIDTH, height: KSCREEN_HEIGHT-64-49-40)
+        scrollView.frame = CGRect.init(x: 0, y: 64+24, width: KSCREEN_WIDTH, height: KSCREEN_HEIGHT-64-49-40)
         self.view.addSubview(scrollView)
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
@@ -49,7 +71,10 @@ class NGHomeViewController: UIViewController {
         
         let homeTableView = NGHomeTableView(frame: scrollView.bounds)
         self.homeTableView = homeTableView
+//        homeTableView.slideDragBlock{}
         scrollView.addSubview(homeTableView)
+
+        
         
         let dynamicTableView = NGDynamicTableView(frame: CGRect(x: scrollView.frameW, y: 0, width: scrollView.frameW, height: scrollView.frameH))
         scrollView.addSubview(dynamicTableView)
@@ -62,5 +87,11 @@ extension NGHomeViewController: UIScrollViewDelegate {
      
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print("\(scrollView.contentOffset.x)")
+        let currentPosition = scrollView.contentOffset.y
+//        if currentPosition >= self.dragCriticalY {
+//            
+//        }else {
+//            
+//        }
     }
 }
